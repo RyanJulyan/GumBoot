@@ -5,10 +5,11 @@
     <form name="captureStopTimePlant" novalidate>
         <div class="form-item dropdown even">
             <label for="item-dd">Item</label>
-            <span class="icon"></span>
-            <select id="item-dd" name="item-dd" ng-model="user.PlantItem" ng-change="changeModelItem(user.PlantItem)" required>
-                <option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="item-dd" name="item-dd" ng-model="user.PlantItem" ng-change="changeModelItem(user.PlantItem)" required>
+					<option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item dropdown odd">
             <label for="Reference">Reference</label>
@@ -36,10 +37,11 @@
         </div>
         <div class="form-item dropdown even">
             <label for="timetype">Time Type</label>
-            <span class="icon"></span>
-            <select id="timetype" name="timetype" ng-model="user.TimeType">
-                <option ng-repeat="items in timeList" value="{{items.Id}}">{{items.Text}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="timetype" name="timetype" ng-model="user.TimeType">
+					<option ng-repeat="items in timeList" value="{{items.Id}}">{{items.Text}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item text odd">
             <label for="stoptime">Select Stop time</label>

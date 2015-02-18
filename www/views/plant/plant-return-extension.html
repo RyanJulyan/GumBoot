@@ -5,14 +5,14 @@
     <form name="returnPlant" novalidate>
         <div class="form-item dropdown even">
             <label for="item-dd">Item to update</label>
-            <span class="icon"></span>
-            <select id="item-dd" name="item-dd" ng-model="user.ItemType" ng-change="changeModelItem(user.ItemType)" required>
-                <option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="item-dd" name="item-dd" ng-model="user.ItemType" ng-change="changeModelItem(user.ItemType)" required>
+					<option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item dropdown odd">
             <label for="Reference">Reference</label>
-            <span class="icon"></span>
             <input id="Reference" name="Reference" type="text" placeholder="{{user.Reference}}" ng-model="user.Reference" disabled>
         </div>
         <div class="form-item disabled even">
