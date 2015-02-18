@@ -1,0 +1,81 @@
+button,
+.button {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #008CBA;
+  border-color: #007095;
+  color: #fff;
+  transition: background-color 300ms ease-out;
+}
+button.full-width,
+.button.full-width {
+  width: 100%;
+  margin: 0px 0 5px 0;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  background-color: #008CBA;
+}
+button {
+  outline: transparent !important;
+}
+.cbutton {
+  position: relative;
+  width: 50%;
+  display: block;
+  float: left;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 18px;
+  background: -webkit-linear-gradient(left, #1988b8, #0471a0);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #1988b8, #0471a0);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #1988b8, #0471a0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #1988b8, #0471a0);
+  /* Standard syntax */
+}
+.cbutton .icon {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  background: url(../images/icons_sprites.png) no-repeat -66px 0px;
+  width: 15px;
+  height: 65px;
+  display: block;
+  -webkit-transition: transform 0.8s;
+  transition: transform 0.8s;
+}
+.cbutton:active,
+.cbutton:hover,
+.cbutton:visited {
+  color: #ffffff;
+}
+.cbutton:active .icon,
+.cbutton:hover .icon,
+.cbutton:visited .icon {
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+}

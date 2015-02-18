@@ -1066,18 +1066,3 @@ md-dialog .md-actions .md-button {
   text-align: center;
   margin-bottom: 20px;
 }
-.carrot-box{
-	background: url(../images/carrot_d_select_icon.png);
-	background-repeat:no-repeat;
-	background-position:99% center;
-	height: 27px;
-}
-.carrot-select{
-	background: transparent; 
-	-webkit-appearance: none; 
-	-moz-appearance: none; 
-	float: right; 
-	width: 40%; 
-	padding: 3px; 
-	height: 27px;
-}

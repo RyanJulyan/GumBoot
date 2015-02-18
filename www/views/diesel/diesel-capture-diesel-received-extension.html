@@ -1,0 +1,31 @@
+<div>
+    <div class="page-header">
+        <h1 class="page-title">Capture Diesel Received</h1>
+    </div>
+    <form name="receivedDiesel" novalidate>
+        <div class="form-item date even" ng-hide="dateClicked">
+            <label for="dateDisplay">Date</label>
+            <span class="icon"></span>
+            <input id="dateDisplay" name="dateDisplay" type="text" ng-model="user.DateReceived" ng-focus="dateClicked=true"  placeholder="{{currentDate}}" value="{{currentDate}}">
+        </div>
+        <div class="form-item date even" ng-show="dateClicked">
+            <label for="date">Date</label>
+            <span class="icon"></span>
+            <input id="date" name="date" type="date" ng-model="user.DateReceivedUpdate" ng-blur="updateDate(user.DateReceivedUpdate)">
+        </div>
+        <div class="form-item text odd">
+            <label for="litres-filled">Litres Filled Up</label>
+            <span class="icon"></span>
+            <input id="litres-filled" name="litres-filled" type="number" placeholder="Enter value..." ng-model="user.Litres" required>
+        </div>
+        <div class="form-item text even">
+            <label for="remarks">Remarks</label>
+            <span class="icon"></span>
+            <input id="remarks" name="remarks" type="text" placeholder="Enter text..." ng-model="user.Remarks" >
+        </div>
+        <div class="form-buttons">
+            <button type="submit" class="button radius nextbtn full-width" ng-click="showConfirm($event)" ng-disabled="receivedDiesel.$invalid">Confirm</button>
+            <button href="" class="button radius cancelbtn full-width" onclick="navigator.app.backHistory()">Cancel<span class="icon"></span></button>
+        </div>
+    </form>
+</div>

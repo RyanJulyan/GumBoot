@@ -1,0 +1,78 @@
+.ng-dirty {
+  border: 1px solid yellow;
+}
+.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+.ng-valid.ng-dirty {
+  border: 1px solid green;
+}
+input.ng-invalid-minlength.ng-dirty {
+  border: 1px solid purple;
+}
+form.ng-invalid.ng-dirty,
+form.ng-valid.ng-dirty {
+  border: 0 !important;
+}
+form {
+  padding-bottom: 50px;
+  position: relative;
+}
+form .validation-messages {
+  font-size: 12px;
+  margin-top: -15px;
+  color: #fff;
+  font-weight: bold;
+}
+form input,
+form select {
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+}
+form .form-item {
+  padding: 15px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+form .form-item .icon {
+  float: right;
+  width: 26px;
+  height: 26px;
+}
+form .form-item.text .icon {
+  background: url(../images/icons_sprites.png) no-repeat 262px -10px;
+}
+form .form-item.date .icon {
+  background: url(../images/icons_sprites.png) no-repeat 206px -10px;
+}
+form .form-item.dropdown .icon {
+  background: url(../images/icons_sprites.png) no-repeat 224px -10px;
+}
+form .form-item input,
+form .form-item select {
+  float: right;
+  width: 35%;
+  padding: 3px;
+  height: 27px;
+}
+form .form-item .switch-toggle {
+  width: 30%;
+  float: right;
+}
+form .form-item .switch-toggle input + label {
+  line-height: 29px;
+}
+form .form-item label {
+  float: left;
+  line-height: 29px;
+}
+form .form-item.odd {
+  background-color: #ececec;
+}
+form .form-item.even {
+  background-color: #ffffff;
+}
+textarea {
+  min-height: 200px;
+}

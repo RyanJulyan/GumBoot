@@ -1,0 +1,12 @@
+#main-menu {
+  list-style: none;
+  margin: 0;
+}
+#main-menu md-item {
+  padding: 20px 10px;
+  background-color: #ffffff;
+  position: relative;
+}
+.left-off-canvas-menu {
+  background: #ffffff;
+}

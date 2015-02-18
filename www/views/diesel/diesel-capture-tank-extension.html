@@ -1,0 +1,51 @@
+<div>
+    <div class="page-header">
+        <h1 class="page-title">Capture Tanking Reading</h1>
+    </div>
+    <form name="captureTankDiesel" novalidate>
+        <div class="form-item date even" ng-hide="dateClicked">
+            <label for="dateDisplay">Date</label>
+            <span class="icon"></span>
+            <input id="dateDisplay" name="dateDisplay" type="text"  ng-model="user.CaptureDate" ng-focus="dateClicked=true"  placeholder="{{currentDate}}" value="{{currentDate}}">
+        </div>
+        <div class="form-item date even" ng-show="dateClicked">
+            <label for="date">Date</label>
+            <span class="icon"></span>
+            <input type="date" id="date" name="date" ng-model="user.CaptureDateUpdate"  ng-blur="updateDate(user.CaptureDateUpdate)">
+        </div>
+        <div class="form-item odd">
+            <label>Select reading time</label>
+            <div class="switch-toggle panel">
+                <input id="readingyes" name="readingtime" type="radio" value="true" checked ng-model="user.readingType">
+                <label for="readingyes" onclick="">Morning</label>
+                <input id="readingno" name="readingtime" value="false" type="radio" ng-model="user.readingType">
+                <label for="readingno" onclick="">Evening</label>
+                <a class="button"></a>
+            </div>
+        </div>
+        <div class="form-item even">
+            <label>Select Tank</label>
+            <div class="switch-toggle panel">
+                <input id="toyes" name="towho" type="radio" value="Tank 1" checked ng-model="user.TankType">
+                <label for="toyes" onclick="">Tank 1</label>
+                <input id="tono" name="towho" value="Tank 2" type="radio" ng-model="user.TankType">
+                <label for="tono" onclick="">Tank 2</label>
+                <a class="button"></a>
+            </div>
+        </div>
+        <div class="form-item text even">
+            <label for="reading">Reading</label>
+            <span class="icon"></span>
+            <input id="reading" name="reading" type="number" placeholder="Enter value..." ng-model="user.Reading" required>
+        </div>
+        <div class="form-item text even">
+            <label for="remarks">Remarks</label>
+            <span class="icon"></span>
+            <input id="remarks" name="remarks" type="text" placeholder="Enter text..." ng-model="user.Remarks">
+        </div>
+        <div class="form-buttons">
+            <button type="submit" class="button radius nextbtn full-width" ng-click="showConfirm($event)" ng-disabled="captureTankDiesel.$invalid">Confirm</button>
+            <button href="" class="button radius cancelbtn full-width" onclick="navigator.app.backHistory()">Cancel<span class="icon"></span></button>
+        </div>
+    </form>
+</div>
