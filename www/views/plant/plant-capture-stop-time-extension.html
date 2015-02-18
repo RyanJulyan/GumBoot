@@ -1,0 +1,59 @@
+<div>
+    <div class="page-header">
+        <h1 class="page-title">Capture Stop Time</h1>
+    </div>
+    <form name="captureStopTimePlant" novalidate>
+        <div class="form-item dropdown even">
+            <label for="item-dd">Item</label>
+            <span class="icon"></span>
+            <select id="item-dd" name="item-dd" ng-model="user.PlantItem" ng-change="changeModelItem(user.PlantItem)" required>
+                <option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
+            </select>
+        </div>
+        <div class="form-item dropdown odd">
+            <label for="Reference">Reference</label>
+            <input id="Reference" name="Reference" type="text" placeholder="{{user.Reference}}" ng-model="user.Reference" disabled>
+        </div>
+        <div class="form-item date even" ng-hide="dateClicked">
+            <label for="dateDisplay">Date</label>
+            <span class="icon"></span>
+            <input id="dateDisplay" name="dateDisplay" type="text" ng-model="user.ActivityDate" ng-focus="dateClicked=true"  placeholder="{{currentDate}}" value="{{currentDate}}">
+        </div>
+        <div class="form-item date even" ng-show="dateClicked">
+            <label for="date">Date</label>
+            <span class="icon"></span>
+            <input id="date" name="date" type="date" ng-model="user.ActivityDateUpdate" ng-blur="updateDate(user.ActivityDateUpdate)">
+        </div>
+        <div class="form-item odd">
+            <label>Full work day</label>
+            <div class="switch-toggle panel">
+                <input id="fullyes" name="fullworkday" type="radio" value="false" ng-model="user.isFullWorkDay">
+                <label for="fullyes" onclick="">No</label>
+                <input id="fullno" name="fullworkday" value="true" type="radio" ng-model="user.isFullWorkDay" checked>
+                <label for="fullno" onclick="">Yes</label>
+                <a class="button"></a>
+            </div>
+        </div>
+        <div class="form-item dropdown even">
+            <label for="timetype">Time Type</label>
+            <span class="icon"></span>
+            <select id="timetype" name="timetype" ng-model="user.TimeType">
+                <option ng-repeat="items in timeList" value="{{items.Id}}">{{items.Text}}</option>
+            </select>
+        </div>
+        <div class="form-item text odd">
+            <label for="stoptime">Select Stop time</label>
+            <span class="icon"></span>
+            <input id="stoptime" name="stoptime" type="time" placeholder="Enter text..." ng-model="user.TimeOfActivity" required>
+        </div>
+        <div class="form-item text odd">
+            <label for="comments">Comments</label>
+            <span class="icon"></span>
+            <input id="comments" name="comments" type="text" placeholder="Enter text..." ng-model="user.Comments" >
+        </div>
+        <div class="form-buttons">
+            <button type="submit" class="button radius nextbtn full-width" ng-click="showConfirm($event)" ng-disabled="captureStopTimePlant.$invalid">Confirm</button>
+            <button onclick="navigator.app.backHistory()" class="button radius cancelbtn full-width">Cancel<span class="icon"></span></button>
+        </div>
+    </form>
+</div>

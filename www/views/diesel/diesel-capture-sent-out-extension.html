@@ -1,0 +1,53 @@
+<div>
+    <div class="page-header">
+        <h1 class="page-title">Capture Diesel Sent Out</h1>
+    </div>
+    <form name="sentOutDiesel" novalidate>
+        <div class="form-item date even" ng-hide="dateClicked">
+            <label for="dateDisplay">Date</label>
+            <span class="icon"></span>
+            <input id="dateDisplay" name="dateDisplay" type="text" ng-model="user.CaptureDate" ng-focus="dateClicked=true" placeholder="{{currentDate}}" value="{{currentDate}}">
+        </div>
+        <div class="form-item date even" ng-show="dateClicked">
+            <label for="date">Date</label>
+            <span class="icon"></span>
+            <input type="date" id="date" name="date" ng-model="user.CaptureDateUpdate" ng-blur="updateDate(user.CaptureDateUpdate)" >
+        </div>
+        <div class="form-item odd">
+            <label>Select type</label>
+            <div class="switch-toggle panel">
+                <input id="plant" name="type" type="radio" value="Plant" checked ng-model="user.CaptureType">
+                <label for="plant" onclick="">Plant</label>
+                <input id="contractor" name="type" value="Contractor" type="radio" ng-model="user.CaptureType">
+                <label for="contractor" onclick="">Contractor</label>
+                <a class="button"></a>
+            </div>
+        </div>
+        <div class="form-item dropdown even">
+            <label for="item-dd">Item</label>
+            <span class="icon"></span>
+            <select id="item-dd" name="item-dd" ng-model="user.PlantItem" ng-change="changeModelItem(user.PlantItem)" required>
+                <option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
+            </select>
+        </div>
+        <div class="form-item text odd">
+            <label for="Recipient">To Who</label>
+            <span class="icon"></span>
+            <input id="Recipient" name="recipient" type="text" placeholder="Enter text..." ng-model="user.Recipient">
+        </div>
+        <div class="form-item text odd">
+            <label for="Reference">Reference</label>
+            <span class="icon"></span>
+            <input id="Reference" name="reference" type="text" placeholder="Enter text..." ng-model="user.Reference" required>
+        </div>
+        <div class="form-item text even">
+            <label for="litres-filled">Litres Filled Up</label>
+            <span class="icon"></span>
+            <input id="litres-filled" name="litres-filled" type="number" placeholder="Enter value..." ng-model="user.Litres" required>
+        </div>
+        <div class="form-buttons">
+            <button type="submit" class="button radius nextbtn full-width" ng-click="showConfirm($event)" ng-disabled="sentOutDiesel.$invalid">Confirm</button>
+            <button href="" class="button radius cancelbtn full-width" onclick="navigator.app.backHistory()">Cancel<span class="icon"></span></button>
+        </div>
+    </form>
+</div>

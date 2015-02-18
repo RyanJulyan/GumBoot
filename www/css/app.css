@@ -1,0 +1,1068 @@
+h1 {
+  margin: 0;
+}
+h1.page-title {
+  padding: 5px 15px;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.accel {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.ng-dirty {
+  border: 2px solid yellow;
+}
+.ng-invalid.ng-dirty {
+  border: 2px solid red;
+}
+.ng-valid.ng-dirty {
+  border: 2px solid #06abff;
+}
+input.ng-invalid-minlength.ng-dirty {
+  border: 2px solid cyan;
+}
+form.ng-invalid.ng-dirty,
+form.ng-valid.ng-dirty {
+  border: 0 !important;
+}
+form {
+  padding-bottom: 50px;
+  position: relative;
+  padding: 10px 15px;
+}
+form .form-buttons {
+  display: block;
+  margin-top: 15px;
+  padding-bottom: 46px;
+}
+form .form-buttons button.disabled,
+form .form-buttons button[disabled],
+form .form-buttons .button.disabled,
+form .form-buttons .button[disabled] {
+  background: #c8c8c8;
+}
+form .form-buttons .nextbtn,
+form .form-buttons .submitbtn {
+  margin: 10px 0 10px 0;
+}
+form .form-buttons .cancelbtn {
+  background: -webkit-linear-gradient(top, rgba(44, 62, 80, 0.9), rgba(39, 47, 53, 0.92));
+}
+form .validation-messages {
+  font-size: 12px;
+  margin-top: -15px;
+  color: #fff;
+  font-weight: bold;
+}
+form input,
+form select {
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+}
+form .form-item {
+  padding: 18px 15px 0 15px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2);
+}
+form .form-item .icon {
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff url(../images/icons_sprites.png) no-repeat 0px 0px;
+}
+form .form-item.disabled .icon {
+  background: none;
+}
+form .form-item.text .icon {
+  background: #ffffff url(../images/icons_sprites.png) no-repeat -262px -13px;
+}
+form .form-item.date .icon {
+  background: #ffffff url(../images/icons_sprites.png) no-repeat -206px -13px;
+}
+form .form-item.dropdown .icon {
+  background: #ffffff url(../images/icons_sprites.png) no-repeat -224px -13px;
+}
+form .form-item input,
+form .form-item select {
+  float: right;
+  width: 40%;
+  padding: 3px;
+  height: 27px;
+}
+form .form-item .switch-toggle {
+  width: 40%;
+  float: right;
+  background: #DADADA;
+  outline: transparent !important;
+}
+form .form-item .switch-toggle input + label {
+  color: #ffffff;
+  outline: transparent !important;
+  font-size: 11px;
+}
+form .form-item .switch-toggle .button {
+  outline: transparent !important;
+}
+form .form-item label {
+  float: left;
+  line-height: 29px;
+  width: 60%;
+}
+form .form-item.odd {
+  background-color: #ececec;
+}
+form .form-item.even {
+  background-color: #ffffff;
+}
+textarea {
+  min-height: 200px;
+}
+.button-container {
+  padding: 10px 15px 0 15px;
+}
+button,
+.button {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #336883;
+  border-color: #007095;
+  color: #ffffff;
+  transition: background-color 300ms ease-out;
+}
+button.icon-btn,
+.button.icon-btn {
+  text-align: left;
+  padding-left: 70px;
+}
+button .icon,
+.button .icon {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+}
+button .icon.capture-start,
+.button .icon.capture-start {
+  background: url(../images/icons_sprites.png) no-repeat -34px -11px;
+}
+button .icon.capture-stop,
+.button .icon.capture-stop {
+  background: url(../images/icons_sprites.png) no-repeat -80px -11px;
+}
+button .icon.capture-received,
+.button .icon.capture-received {
+  background: url(../images/icons_sprites.png) no-repeat -112px -11px;
+}
+button .icon.update,
+.button .icon.update {
+  background: url(../images/icons_sprites.png) no-repeat -144px -11px;
+}
+button .icon.return,
+.button .icon.return {
+  background: url(../images/icons_sprites.png) no-repeat -177px -11px;
+}
+button.full-width,
+.button.full-width {
+  width: 100%;
+  margin: 0px 0 10px 0;
+  background: -webkit-linear-gradient(top, rgba(51, 104, 131, 0.63), rgba(44, 62, 80, 0.87));
+  border: 2px solid rgba(102, 102, 102, 0.35);
+  box-shadow: 2px 3px 5px #272727;
+  -webkit-box-shadow: 2px 3px 5px #272727;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  background-color: #336883;
+  color: #ffffff;
+}
+button {
+  outline: transparent !important;
+}
+.cbutton {
+  position: relative;
+  width: 50%;
+  display: block;
+  float: left;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 18px;
+  background: -webkit-linear-gradient(left, #336883, #2c3e50);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #336883, #2c3e50);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #336883, #2c3e50);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #336883, #2c3e50);
+  /* Standard syntax */
+}
+.cbutton .icon {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  background: url(../images/icons_sprites.png) no-repeat -66px 0px;
+  width: 15px;
+  height: 65px;
+  display: block;
+  -webkit-transition: transform 0.8s;
+  transition: transform 0.8s;
+}
+.cbutton:active,
+.cbutton:hover,
+.cbutton:visited {
+  color: #ffffff;
+}
+.cbutton:active .icon,
+.cbutton:hover .icon,
+.cbutton:visited .icon {
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+}
+.md-sidenav-left,
+md-sidenav {
+  left: 0;
+  top: 50px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background: none;
+}
+md-toolbar.md-default-theme {
+  background-color: rgba(43, 93, 115, 0.94);
+  color: #ffffff;
+}
+md-toolbar.md-default-theme h1 {
+  color: #ffffff;
+  height: 50px;
+}
+md-toolbar.md-default-theme span {
+  font-size: 11px;
+  padding-left: 17px;
+  margin-top: -15px;
+}
+md-content.md-default-theme {
+  background-color: #ffffff;
+  height: 100%;
+  overflow: hidden;
+}
+md-bottom-sheet {
+  padding: 0 0px 88px;
+  border-top: 0;
+}
+#main-menu {
+  list-style: none;
+  margin: 0;
+}
+#main-menu md-item {
+  background-color: #ffffff;
+  position: relative;
+  height: 64px;
+}
+#main-menu md-item button,
+#main-menu md-item a {
+  color: #565656;
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: left;
+  border-radius: 0;
+  padding: 20px 10px;
+  margin: 0;
+  background-color: #ffffff !important;
+}
+#main-menu md-item button span,
+#main-menu md-item a span {
+  padding-left: 50px;
+}
+#main-menu md-item button .icon,
+#main-menu md-item a .icon {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  background: url(../images/icons_sprites.png) no-repeat -66px -12px;
+  width: 25px;
+  height: 65px;
+  display: block;
+  padding: 0;
+}
+#main-menu md-item button:active,
+#main-menu md-item a:active,
+#main-menu md-item button:hover,
+#main-menu md-item a:hover,
+#main-menu md-item button:visited,
+#main-menu md-item a:visited {
+  color: #565656;
+}
+#main-menu md-item button.home,
+#main-menu md-item a.home {
+  border-bottom: 1px solid #dcdcdc;
+}
+#main-menu md-item button.home .icon,
+#main-menu md-item a.home .icon {
+  background: url(../images/icons_sprites.png) no-repeat -354px -10px;
+}
+#main-menu md-item button.optionsplant,
+#main-menu md-item a.optionsplant {
+  border-bottom: 1px solid #dcdcdc;
+}
+#main-menu md-item button.optionsplant .icon,
+#main-menu md-item a.optionsplant .icon {
+  width: 30px;
+  background: url(../images/icons_sprites.png) no-repeat -381px -10px;
+}
+#main-menu md-item button.optionsdiesel,
+#main-menu md-item a.optionsdiesel {
+  border-bottom: 1px solid #dcdcdc;
+}
+#main-menu md-item button.optionsdiesel .icon,
+#main-menu md-item a.optionsdiesel .icon {
+  background: url(../images/icons_sprites.png) no-repeat -413px -10px;
+}
+#main-menu md-item button.settings,
+#main-menu md-item a.settings {
+  border-bottom: 1px solid #dcdcdc;
+}
+#main-menu md-item button.settings .icon,
+#main-menu md-item a.settings .icon {
+  width: 30px;
+  background: url(../images/icons_sprites.png) no-repeat -496px -9px;
+}
+#main-menu md-item button.logout,
+#main-menu md-item a.logout {
+  border-bottom: 1px solid #dcdcdc;
+}
+#main-menu md-item button.logout .icon,
+#main-menu md-item a.logout .icon {
+  width: 30px;
+  background: url(../images/icons_sprites.png) no-repeat -466px -10px;
+}
+.left-off-canvas-menu {
+  background: #ffffff;
+}
+.animate-show {
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+}
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+/*
+ * CSS TOGGLE SWITCHES
+ * Unlicense
+ *
+ * Ionuț Colceriu - ghinda.net
+ * https://github.com/ghinda/css-toggle-switch
+ *
+ */
+/* Toggle Switches
+ */
+/* Shared
+ */
+/* Checkbox
+ */
+/* Radio Switch
+ */
+/* Hide by default
+ */
+/* Variables
+ */
+/* Mixins
+*/
+.switch-toggle a,
+.switch-light span span {
+  display: none;
+}
+/* We can't test for a specific feature,
+ * so we only target browsers with support for media queries.
+ */
+@media only screen {
+  /* Checkbox switch
+   */
+  /* Radio switch
+   */
+  /* Standalone Themes */
+  /* Candy Theme
+   * Based on the "Sort Switches / Toggles (PSD)" by Ormal Clarck
+   * http://www.premiumpixels.com/freebies/sort-switches-toggles-psd/
+   */
+  /* Android Theme
+   */
+  /* iOS Theme
+   */
+  .switch-light {
+    display: block;
+    height: 30px;
+    /* Outline the toggles when the inputs are focused
+   */
+    position: relative;
+    overflow: visible;
+    padding: 0;
+    margin-left: 100px;
+    /* Position the label over all the elements, except the slide-button (<a>)
+   * Clicking anywhere on the label will change the switch-state
+   */
+    /* Don't hide the input from screen-readers and keyboard access
+   */
+  }
+  .switch-light * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .switch-light a {
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .switch-light label,
+  .switch-light > span {
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .switch-light input:focus ~ a,
+  .switch-light input:focus + label {
+    outline: 1px dotted #888888;
+  }
+  .switch-light label {
+    position: relative;
+    top: static;
+    right: static;
+    left: static;
+    display: block;
+    width: 100%;
+    z-index: 3;
+  }
+  .switch-light input {
+    position: absolute;
+    top: static;
+    right: static;
+    left: static;
+    display: inherit;
+    width: auto;
+    z-index: 5;
+    opacity: 0;
+  }
+  .switch-light input:checked ~ a {
+    right: 0%;
+  }
+  .switch-light > span {
+    position: absolute;
+    top: static;
+    right: static;
+    left: -100px;
+    display: inherit;
+    width: 100%;
+    z-index: auto;
+    margin: 0;
+    padding-right: 100px;
+    text-align: left;
+  }
+  .switch-light > span span {
+    position: absolute;
+    top: 0;
+    right: static;
+    left: 0;
+    display: block;
+    width: 50%;
+    z-index: 5;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .switch-light > span span:last-child {
+    left: 50%;
+  }
+  .switch-light a {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: static;
+    display: block;
+    width: 50%;
+    z-index: 4;
+    height: 100%;
+    padding: 0;
+  }
+  .switch-toggle {
+    display: block;
+    height: 30px;
+    /* Outline the toggles when the inputs are focused
+   */
+    position: relative;
+    /* For callout panels in foundation
+   */
+    padding: 0 !important;
+    /* Generate styles for the multiple states */
+  }
+  .switch-toggle * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .switch-toggle a {
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .switch-toggle label,
+  .switch-toggle > span {
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .switch-toggle input:focus ~ a,
+  .switch-toggle input:focus + label {
+    outline: 1px dotted #888888;
+  }
+  .switch-toggle input {
+    position: absolute;
+    opacity: 0;
+  }
+  .switch-toggle input + label {
+    position: relative;
+    top: static;
+    right: static;
+    left: static;
+    display: inherit;
+    width: 50%;
+    z-index: 2;
+    float: left;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .switch-toggle a {
+    position: absolute;
+    top: 0;
+    right: static;
+    left: 0;
+    display: inherit;
+    width: 50%;
+    z-index: 1;
+    padding: 0;
+    height: 100%;
+  }
+  .switch-toggle input:last-of-type:checked ~ a {
+    left: 50%;
+  }
+  .switch-toggle.switch-3 label,
+  .switch-toggle.switch-3 a {
+    width: 33.33333%;
+  }
+  .switch-toggle.switch-3 input:checked:nth-of-type(2) ~ a {
+    left: 33.33333%;
+  }
+  .switch-toggle.switch-3 input:checked:last-of-type ~ a {
+    left: 66.66667%;
+  }
+  .switch-toggle.switch-4 label,
+  .switch-toggle.switch-4 a {
+    width: 25%;
+  }
+  .switch-toggle.switch-4 input:checked:nth-of-type(2) ~ a {
+    left: 25%;
+  }
+  .switch-toggle.switch-4 input:checked:nth-of-type(3) ~ a {
+    left: 50%;
+  }
+  .switch-toggle.switch-4 input:checked:last-of-type ~ a {
+    left: 75%;
+  }
+  .switch-toggle.switch-5 label,
+  .switch-toggle.switch-5 a {
+    width: 20%;
+  }
+  .switch-toggle.switch-5 input:checked:nth-of-type(2) ~ a {
+    left: 20%;
+  }
+  .switch-toggle.switch-5 input:checked:nth-of-type(3) ~ a {
+    left: 40%;
+  }
+  .switch-toggle.switch-5 input:checked:nth-of-type(4) ~ a {
+    left: 60%;
+  }
+  .switch-toggle.switch-5 input:checked:last-of-type ~ a {
+    left: 80%;
+  }
+  .switch-candy {
+    background-color: #2d3035;
+    border: none;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(255, 255, 255, 0.2), 0;
+    -moz-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(255, 255, 255, 0.2), 0;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0px rgba(255, 255, 255, 0.2), 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #191b1e;
+  }
+  .switch-candy label {
+    color: #ffffff;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .switch-candy input:checked + label {
+    color: #333333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  .switch-candy a {
+    background-color: #70c66b;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45), 0;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45), 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45), 0;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+  }
+  .switch-candy > span {
+    color: #333333;
+    text-shadow: none;
+  }
+  .switch-candy span {
+    color: #ffffff;
+  }
+  .switch-candy.switch-candy-blue a {
+    background-color: #38a3d4;
+  }
+  .switch-candy.switch-candy-yellow a {
+    background-color: #f5e560;
+  }
+  .switch-android {
+    background-color: #464747;
+    border: none;
+    border-radius: 1px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    color: #ffffff;
+    /* Selected ON switch-light
+     */
+  }
+  .switch-android label {
+    color: #ffffff;
+  }
+  .switch-android > span span {
+    opacity: 0;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  .switch-android > span span:first-of-type {
+    opacity: 1;
+  }
+  .switch-android a {
+    background-color: #666666;
+    border: none;
+    border-radius: 1px;
+    -webkit-box-shadow: inset rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0, 0;
+    -moz-box-shadow: inset rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0, 0;
+    box-shadow: inset rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0, 0;
+  }
+  .switch-android.switch-light input:checked ~ a {
+    background-color: #0e88b1;
+  }
+  .switch-android.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+  .switch-android.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+  }
+  .switch-android.switch-toggle,
+  .switch-android .switch-android > span span {
+    font-size: 85%;
+    text-transform: uppercase;
+  }
+  .switch-ios.switch-light {
+    color: #868686;
+  }
+  .switch-ios.switch-light a {
+    background-color: #ffffff;
+    border: 1px solid lightgrey;
+    border-radius: 100%;
+    -webkit-box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.025), 0 1px 4px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1);
+    left: 0;
+    width: 30px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .switch-ios.switch-light > span span {
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+  .switch-ios.switch-light > span span:first-of-type {
+    opacity: 1;
+    padding-left: 30px;
+  }
+  .switch-ios.switch-light > span span:last-of-type {
+    padding-right: 30px;
+  }
+  .switch-ios.switch-light > span:before {
+    position: absolute;
+    top: 0;
+    right: static;
+    left: 100px;
+    display: block;
+    width: 100%;
+    z-index: inherit;
+    background-color: #fafafa;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    content: '';
+    height: 100%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .switch-ios.switch-light input:checked ~ a {
+    left: 100%;
+    margin-left: -30px;
+  }
+  .switch-ios.switch-light input:checked ~ span:before {
+    border-color: #53d76a;
+    box-shadow: inset 0 0 0 30px #53d76a;
+  }
+  .switch-ios.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+  .switch-ios.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #ffffff;
+  }
+  .switch-ios.switch-toggle {
+    background-color: #fafafa;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    -moz-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0, 0, 0;
+  }
+  .switch-ios.switch-toggle a {
+    background-color: #53d76a;
+    border-radius: 25px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .switch-ios.switch-toggle label {
+    color: #868686;
+  }
+  .switch-ios input:checked + label {
+    color: #3a3a3a;
+  }
+}
+/* Bugfix for older Webkit, including mobile Webkit. Adapted from
+ * http://css-tricks.com/webkit-sibling-bug/
+ */
+@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 1280px) {
+  .switch-light,
+  .switch-toggle {
+    -webkit-animation: webkitSiblingBugfix infinite 1s;
+  }
+}
+@-webkit-keyframes webkitSiblingBugfix {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: transparent url(../images/splash-land-hdpi.png);
+  transition: background 0.8s linear;
+  background-size: cover;
+}
+body.connected {
+  background: transparent url(../images/bg.jpg);
+  background-size: cover;
+}
+body .off-canvas-wrap {
+  height: 100%;
+}
+body .off-canvas-wrap .inner-wrap {
+  height: 100%;
+}
+.loader {
+  width: 48%;
+  position: absolute;
+  left: 27%;
+  top: -6px;
+}
+.loader img {
+  margin: 0 auto;
+  display: block;
+}
+#ViewStates {
+  position: relative;
+  height: auto;
+  padding-top: 50px;
+}
+.page-header {
+  overflow: hidden;
+  padding: 0 15px;
+  color: #ffffff;
+}
+.page-header h1 {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 50px;
+}
+.page-header .contract-title {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+.page-header .site-title {
+  float: right;
+  font-size: 12px;
+  width: 44%;
+}
+#footer-nav {
+  width: 100%;
+  display: block;
+  padding: 0 15px;
+  margin: 0 auto;
+  background: transparent;
+}
+#footer-nav.login-header img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  transition: width 0.9s;
+  -webkit-transition: width 0.9s;
+}
+#footer-nav .controls {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+#footer-nav .controls p {
+  color: #ffffff;
+  padding: 5px 15px;
+  text-align: center;
+  margin: 0;
+}
+#footer-nav .controls .button {
+  width: 100%;
+}
+md-toast.md-top {
+  top: 50px !important;
+}
+md-toast.md-default-theme {
+  background-color: #2F2F2F;
+  color: #fafafa;
+  box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19);
+}
+md-toast.md-default-theme span {
+  font-size: 13px;
+}
+md-toast.md-default-theme button {
+  margin: 0;
+  height: 48px;
+  padding: 0;
+  right: 0;
+  width: 37px;
+  position: absolute;
+  background: url(../images/icons_sprites.png) no-repeat 0px -1px;
+}
+md-dialog md-content {
+  padding: 24px 24px 0 24px;
+}
+md-dialog md-content.md-default-theme {
+  height: auto;
+}
+md-dialog md-content h2 {
+  font-size: 16px;
+}
+md-dialog .md-actions .md-button {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  background-color: #336883 !important;
+  border-color: #007095;
+  color: #ffffff !important;
+  width: 47%;
+  margin-right: 7px;
+  transition: background-color 300ms ease-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#header-nav {
+  height: 50px;
+  overflow: hidden;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #353535;
+  box-shadow: 0px -2px 6px #000000;
+  -webkit-box-shadow: 0px -2px 6px #000000;
+  position: relative;
+}
+#header-nav .controls {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+#header-nav .controls .md-button {
+  height: 50px;
+  padding: 0 20px;
+}
+#header-nav .controls .menu-button {
+  float: left;
+  background-color: #3D3D3D;
+}
+#header-nav .controls .back-button {
+  float: right;
+  background-color: #3D3D3D;
+}
+.header-alert {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #2c627e;
+  box-shadow: 0 17px 50px rgba(0, 0, 0, 0.19);
+}
+.header-alert #notificationPanel {
+  color: #fff;
+  font-size: 12px;
+  padding: 11px 15px;
+  float: left;
+  color: #ffffff;
+}
+.header-alert #closeNotificationPanel {
+  background: url(../images/icons_sprites.png) no-repeat 0px -5px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0 2px 0 0;
+  float: right;
+}
+.info-panel {
+  position: relative;
+  width: 100%;
+  overflow-y: scroll;
+  margin-top: 0;
+  max-height: 500px;
+}
+.info-panel .info-pane {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.31);
+  max-height: 100px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: -2px 4px 7px -3px #000000;
+  -webkit-box-shadow: -2px 4px 7px -3px #000000;
+}
+.info-panel .info-pane h5 {
+  position: absolute;
+  top: 33%;
+  right: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 2px 10px #000;
+}
+.info-panel .info-pane img {
+  width: 100%;
+}
+.modalscreen {
+  background: #887E73;
+  position: fixed;
+  width: 100%;
+  height: 130%;
+  top: -90px;
+  z-index: 99;
+  left: 0;
+}
+.modalscreen .submit-modal {
+  display: block;
+  width: 80%;
+  padding: 20px;
+  box-shadow: 2px 3px 25px #000000;
+  -webkit-box-shadow: 2px 3px 25px #000000;
+  margin: 30% auto;
+  background: #ffffff;
+  color: #6f6f6f;
+}
+.modalscreen .submit-modal button {
+  width: 48%;
+  padding: 10px;
+}
+.modalscreen .submit-modal button.cancel {
+  background: #6f6f6f;
+}
+.modalscreen .submit-modal p {
+  text-align: center;
+  margin-bottom: 20px;
+}

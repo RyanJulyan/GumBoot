@@ -1,0 +1,64 @@
+{
+    "timeServiceList": [
+        {
+            "Id": 9,
+            "Text": "Start Time"
+        },
+        {
+            "Id": 10,
+            "Text": "Stop Time"
+        }
+    ],
+    "dieselCaptureServiceList": [
+        {
+            "Id": 14,
+            "Text": "Plant"
+        },
+        {
+            "Id": 15,
+            "Text": "Contractor"
+        }
+    ],
+    "dieselReadingServiceList": [
+        {
+            "Id": 18,
+            "Text": "Tank 1"
+        },
+        {
+            "Id": 19,
+            "Text": "Tank 2"
+        },
+        {
+            "Id": 20,
+            "Text": "Tank 3"
+        }
+    ],
+    "dieselTankServiceList": [
+        {
+            "Id": 18,
+            "Text": "Tank 1"
+        },
+        {
+            "Id": 19,
+            "Text": "Tank 2"
+        },
+        {
+            "Id": 20,
+            "Text": "Tank 3"
+        }
+    ],
+    "weatherServiceList": [
+        {
+            "Id": 6,
+            "Text": "Raining"
+        },
+        {
+            "Id": 7,
+            "Text": "Windy"
+        },
+        {
+            "Id": 8,
+            "Text": "Cloudy"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<div>
+    <h1 class="page-title">Plant processing</h1>
+    <div class="button-container">
+        <md-button href="#plant/capture-start-time" class="button radius full-width icon-btn"><span class="icon capture-start"></span>Capture Start Time</md-button>
+        <md-button href="#plant/capture-stop-time" class="button radius full-width icon-btn" ng-if="activeTimes==true"><span class="icon capture-stop"></span>Capture Stop Time</md-button>
+
+        <md-button class="button radius full-width icon-btn" ng-if="activeTimes==false" ng-disabled="true"><span class="icon capture-stop"></span>Capture Stop Time</md-button>
+
+        <md-button href="#plant/receive-plant" class="button radius full-width icon-btn"><span class="icon capture-received"></span>Receive Plant</md-button>
+        <md-button href="#plant/update-plant" class="button radius full-width icon-btn"><span class="icon update"></span>Update Plant</md-button>
+        <md-button href="#plant/return-plant" class="button radius full-width icon-btn"><span class="icon return"></span>Return Plant</md-button>
+    </div>
+</div>

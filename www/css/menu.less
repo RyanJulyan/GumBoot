@@ -1,0 +1,126 @@
+.md-sidenav-left, md-sidenav {
+  left: 0;
+  top: 50px;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  background: none;
+}
+
+md-toolbar.md-default-theme {
+  background-color: rgba(43, 93, 115, 0.94);
+  color: rgb(255,255,255);
+
+  h1 {
+    color: rgb(255,255,255);
+    height: 50px;
+  }
+
+  span {
+    font-size: 11px;
+    padding-left: 17px;
+    margin-top: -15px;
+  }
+}
+
+md-content.md-default-theme {
+  background-color: rgb(255,255,255);
+  height: 100%;
+  overflow: hidden;
+}
+
+// sheet styling
+
+md-bottom-sheet {
+  padding: 0 0px 88px;
+  border-top:0;
+}
+
+// list styling
+#main-menu {
+  list-style:none;
+  margin: 0;
+
+  md-item {
+    background-color: #ffffff;
+    position:relative;
+    height:64px;
+
+    button, a {
+      color:@textGrey;
+      width: 100%;
+      display: block;
+      position:relative;
+      text-align:left;
+      border-radius:0;
+      padding: 20px 10px;
+      margin: 0;
+      background-color:#ffffff !important;
+
+      span {
+        padding-left:50px;
+      }
+      .icon {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        background: url(../images/icons_sprites.png) no-repeat -66px -12px;
+        width: 25px;
+        height: 65px;
+        display: block;
+        padding:0;
+      }
+
+      &:active, &:hover , &:visited{
+        //background: #336883;
+        color:@textGrey;
+      }
+
+      &.home {
+        //border-left: 10px solid #336883;
+        border-bottom: 1px solid #dcdcdc;
+
+        .icon {
+          background: url(../images/icons_sprites.png) no-repeat -354px -10px;
+        }
+      }
+      &.optionsplant {
+        //border-left: 10px solid #df7b55;
+        border-bottom: 1px solid #dcdcdc;
+
+        .icon {
+          width: 30px;
+          background: url(../images/icons_sprites.png) no-repeat -381px -10px;
+        }
+      }
+      &.optionsdiesel {
+        //border-left: 10px solid #df7b55;
+        border-bottom: 1px solid #dcdcdc;
+        .icon {
+          background: url(../images/icons_sprites.png) no-repeat -413px -10px;
+        }
+      }
+      &.settings {
+        //border-left: 10px solid #d9d774;
+        //border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+
+        .icon {
+          width: 30px;
+          background: url(../images/icons_sprites.png) no-repeat -496px -9px;
+        }
+      }
+      &.logout {
+        //border-left: 10px solid #9f4549;
+        border-bottom: 1px solid #dcdcdc;
+
+        .icon {
+          width: 30px;
+          background: url(../images/icons_sprites.png) no-repeat -466px -10px;
+        }
+      }
+    }
+  }
+}
+.left-off-canvas-menu {
+  background: #ffffff;
+}
