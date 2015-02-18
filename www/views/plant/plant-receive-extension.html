@@ -1,3 +1,4 @@
+
 <div>
     <div class="page-header">
         <h1 class="page-title">Receive Plant</h1>
@@ -17,17 +18,19 @@
         </div>
         <div class="form-item dropdown even">
             <label for="item-dd">Plant Type</label>
-            <span class="icon"></span>
-            <select id="item-dd" name="item-dd" ng-model="user.ItemType" ng-change="changeModelItem(user.ItemType)" required>
-                <option ng-repeat="items in itemList" value="{{items.Id}}">{{items.Name}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="item-dd" name="item-dd" ng-model="user.ItemType" ng-change="changeModelItem(user.ItemType)" required>
+					<option ng-repeat="items in itemList" value="{{items.Id}}">{{items.Name}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item dropdown  odd">
             <label for="Model">Model</label>
-            <span class="icon"></span>
-            <select id="Model" name="model" ng-model="user.ItemModel">
-                <option ng-repeat="models in modelList" value="{{models.Id}}">{{models.Name}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="Model" name="model" ng-model="user.ItemModel">
+					<option ng-repeat="models in modelList" value="{{models.Id}}">{{models.Name}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item text even">
             <label for="reference">Reference</label>
@@ -36,10 +39,11 @@
         </div>
         <div class="form-item dropdown odd">
             <label for="hirer-dd">Hirer</label>
-            <span class="icon"></span>
-            <select id="hirer-dd" name="hirer-dd" ng-model="user.Hirer" required>
-                <option ng-repeat="hire in hirerList" value="{{hire.Id}}">{{hire.Name}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="hirer-dd" name="hirer-dd" ng-model="user.Hirer" required>
+					<option ng-repeat="hire in hirerList" value="{{hire.Id}}">{{hire.Name}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item text even">
             <label for="order-num">Order Number</label>
@@ -53,10 +57,11 @@
         </div>
         <div class="form-item dropdown even">
             <label for="weather-dd">Inclement Weather Terms</label>
-            <span class="icon"></span>
-            <select id="weather-dd" name="weather-dd" ng-model="user.WeatherTerm">
-                <option ng-repeat="weather in weatherList" value="{{weather.Id}}">{{weather.Text}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="weather-dd" name="weather-dd" ng-model="user.WeatherTerm">
+					<option ng-repeat="weather in weatherList" value="{{weather.Id}}">{{weather.Text}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item text odd">
             <label for="checked-by">Plant Checked By</label>

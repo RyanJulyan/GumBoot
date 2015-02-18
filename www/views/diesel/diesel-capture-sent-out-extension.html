@@ -25,10 +25,11 @@
         </div>
         <div class="form-item dropdown even">
             <label for="item-dd">Item</label>
-            <span class="icon"></span>
-            <select id="item-dd" name="item-dd" ng-model="user.PlantItem" ng-change="changeModelItem(user.PlantItem)" required>
-                <option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
-            </select>
+            <div class="carrot-box">
+				<select class="carrot-select" id="item-dd" name="item-dd" ng-model="user.PlantItem" ng-change="changeModelItem(user.PlantItem)" required>
+					<option ng-repeat="items in consultantPlants" value="{{items.Id}}">{{items.Name}}</option>
+				</select>
+			</div>
         </div>
         <div class="form-item text odd">
             <label for="Recipient">To Who</label>
