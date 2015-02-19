@@ -82,10 +82,10 @@ app.controller('CaptureSentOutDieselCtrl', ['$scope', '$rootScope', '$mdDialog',
             var CaptureDate = $scope.user.CaptureDate;
             $scope.user.CaptureDate = Date.parse(CaptureDate);
 
-            if (user.CaptureType == "Plant")
-                user.CaptureType = appServices.dieselCaptureServiceList()[0].Id; //Plant
+            if ($scope.user.CaptureType == "Plant")
+                $scope.user.CaptureType = appServices.dieselCaptureServiceList()[0].Id; //Plant
             else
-                user.CaptureType = appServices.dieselCaptureServiceList()[1].Id; //Contractor
+                $scope.user.CaptureType = appServices.dieselCaptureServiceList()[1].Id; //Contractor
 
 			// create Unique Timestamped Id
 			var d = new Date();
@@ -294,10 +294,10 @@ app.controller('CaptureTankDieselCtrl', ['$scope', '$rootScope', '$mdDialog', 'A
             var DateCaptured = $scope.user.DateCaptured;
             $scope.user.DateCaptured = Date.parse(DateCaptured);
 
-            if (user.readingType == "true" || user.readingType == true)
-                user.readingType = "Morning";
+            if ($scope.user.readingType == "true" || $scope.user.readingType == true)
+                $scope.user.readingType = "Morning";
             else
-                user.readingType = "Evening";
+                $scope.user.readingType = "Evening";
 			
 			// create Unique Timestamped Id
 			var d = new Date();

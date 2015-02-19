@@ -179,6 +179,8 @@ app.controller('UpdatePlantCtrl', ['$scope', '$rootScope', '$mdDialog', 'API', '
     // Get plants created by consultant
     API.getPlantByConsultantID(consultant.getConsultant().Id).success(function (data, status) {
         $scope.consultantPlants = data;
+		console.log(" --- consultantPlants --- ");
+		console.log($scope.consultantPlants);
     }).error(function(data, status){
         //console.log(status)
     });
@@ -213,6 +215,8 @@ app.controller('UpdatePlantCtrl', ['$scope', '$rootScope', '$mdDialog', 'API', '
 
     //Dropdown event handler
     $scope.changeModelItem = function (item) {
+		console.log(" --- consultantPlants --- ");
+		console.log($scope.consultantPlants);
         //Populate plant with a selected Plant Received
         for (var x in $scope.consultantPlants) {
             if ($scope.consultantPlants[x].Id == item)
@@ -220,14 +224,16 @@ app.controller('UpdatePlantCtrl', ['$scope', '$rootScope', '$mdDialog', 'API', '
                 //create a plant Object
                 $scope.plant = $scope.consultantPlants[x];
                 $scope.user = $scope.consultantPlants[x];
-
+				
                 /*$scope.user.Reference = $scope.plant.Reference;
                 $scope.user.Rate = parseFloat($scope.plant.Rate);
                 $scope.user.WeatherTerm = $scope.plant.WeatherTerm;*/
 
                 $scope.user.Hirer = appServices.getPlantHirer($scope.plant.Hirer).Name;
+				
                 break;
             }
+			
         }
     };
 
@@ -374,11 +380,11 @@ app.controller('ReturnPlantCtrl', ['$scope', '$rootScope', '$mdDialog', 'API', '
 
             $scope.user.ConsultantId = $rootScope.userData.Id;
             $scope.user.ContractId = $rootScope.userData.CurrentSiteName;
-
-            var DateReceived = $scope.user.DatePlantReturned;
-            $scope.user.DatePlantReturned = DateReceived.getFullYear() + '/' + (DateReceived.getMonth() + 1) + '/' + DateReceived.getDay();
-
-			// create Unique Timestamped Id
+			
+			var DateReceived = $scope.user.DateReceived;
+            $scope.user.DateReceived = Date.parse(DateReceived);
+			
+            // create Unique Timestamped Id
 			var d = new Date();
 			var n = d.getTime();
 			
