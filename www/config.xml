@@ -15,7 +15,5 @@
     <preference name="SplashScreenDelay" value="3000"/>
     <icon src="res/drawable/icon.png" />
     <splash src="res/drawable/screen.png"/>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-    </feature>
+    <feature name="org.apache.cordova.splashscreen.SplashScreen" />
 </widget>
