@@ -190,7 +190,6 @@ app.factory('$localstorage', ['$window', '$rootScope', 'API',  '$cordovaNetwork'
         },
 		cloudSaveLocalStorage: function (){
 			if(navigator.onLine){
-				var userData = JSON.parse(window.localStorage['user']);
 				for(obj in window.localStorage){
 					if(obj.indexOf('-') != -1){
 						var firstDash = obj.indexOf('-');
